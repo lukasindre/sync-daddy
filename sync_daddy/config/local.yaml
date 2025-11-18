@@ -1,0 +1,17 @@
+spotify:
+  client_id_key: SPOTIFY_CLIENT_ID
+  client_secret_key: SPOTIFY_CLIENT_SECRET
+
+apple:
+  key_id_key: APPLE_KEY_ID
+  private_key_contents_key: APPLE_PRIVATE_KEY_CONTENTS
+  team_id_key: APPLE_TEAM_ID
+  music_user_token_key: APPLE_MUSIC_USER_TOKEN
+
+replications:
+  - source:
+      type: spotify
+      id: 29BYfn1emFyeFy0El9pct9
+    destination:
+      type: apple
+      id: p.rXAJLWRI2rRR0X
