@@ -25,9 +25,10 @@ def main() -> None:
             destination_track_names_lower = [
                 x.attributes.name.lower() for x in destination_tracks.data
             ]
+            songs_to_add = []
             for song in source_tracks:
-                songs_to_add = []
                 if song.track.name.lower() not in destination_track_names_lower:
+                    print(f"Searching for song {song.track.name}")
                     apple_song = apple.search_song(song.track.name)
                     if not apple_song.results:
                         print(
